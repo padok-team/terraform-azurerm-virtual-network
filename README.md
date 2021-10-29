@@ -4,7 +4,25 @@ Terraform module which creates Virtual-Network resources on Azurerm.
 
 ## User Stories for this module
 
+- AAOPS I can create a virtuel network for my resources.
+
+## Usage
+
+```hcl
+module "example-virtual-network" {
+  source = "git@github.com:padok-team/terraform-azurerm-virtual-network.git?ref=v0.0.1"
+
+  name                = "example-virutal-network"
+  resource_group_name = "my-resource-group-name"
+  location            = "West Europe"
+  address_space       = ["10.0.0.0/8"]
+}
+```
+
 ## Examples
+
+- [A basic virtual network](examples/example_base/main.tf)
+- [A virtual network with basic DDOS protection](examples/example_with_ddos_protection/main.tf)
 
 <!-- BEGIN_TF_DOCS -->
 ## Modules

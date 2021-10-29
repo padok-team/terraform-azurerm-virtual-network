@@ -1,3 +1,19 @@
+# This exemple deploys a basic virtual network.
+
+terraform {
+  required_version = ">= 0.13.0"
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "2.82.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
 locals {
   address_space = ["10.0.0.0/8"]
 }
