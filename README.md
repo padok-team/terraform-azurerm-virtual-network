@@ -5,6 +5,7 @@ Terraform module which creates Virtual-Network resources on Azurerm.
 ## User Stories for this module
 
 - AAOPS I can create a virtuel network for my resources.
+- AAOPS I can create a virtuel network with a DDOS protection.
 
 ## Usage
 
