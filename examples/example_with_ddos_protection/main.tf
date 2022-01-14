@@ -19,7 +19,7 @@ locals {
 }
 
 module "resource_group" {
-  source   = "git@github.com:padok-team/terraform-azurerm-resource-group.git"
+  source   = "git@github.com:padok-team/terraform-azurerm-resource-group.git?ref=v1.0.0"
   name     = "example-resources"
   location = "West Europe"
 }
