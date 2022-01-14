@@ -1,7 +1,7 @@
-# We can have several vnets
-# we can have a single ddos protection plan
-# A protection plan needs to be able to be shared accross different vnets
-# Thus , we need to decouple the ddos protection plan from the vnet
+# We can have several VNETS
+# We can have a single DDOS protection plan
+# A protection plan needs to be able to be shared accross different VNETS
+# Thus, we need to decouple the DDOS protection plan from the VNET
 
 resource "azurerm_virtual_network" "this" {
   address_space = var.address_space

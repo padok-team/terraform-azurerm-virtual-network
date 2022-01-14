@@ -9,7 +9,7 @@ variable "resource_group_name" {
 }
 
 variable "address_space" {
-  description = "The address space that is used the virtual network. You can supply more than one address space."
+  description = "The address space that is used for the virtual network. You can supply more than one address space."
   type        = list(string)
 }
 
@@ -25,13 +25,13 @@ variable "bgp_community" {
 }
 
 variable "dns_servers" {
-  description = " List of IP addresses of DNS servers"
+  description = "List of DNS servers IP addresses"
   type        = list(string)
   default     = null
 }
 
 variable "azurerm_network_ddos_protection_plan_id" {
-  description = "Id of the DDOS protection plan"
+  description = "ID of the DDOS protection plan"
   type        = string
   default     = ""
 }
