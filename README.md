@@ -11,7 +11,7 @@ Terraform module which creates Virtual-Network resources on Azurerm.
 
 ```hcl
 module "example-virtual-network" {
-  source = "git@github.com:padok-team/terraform-azurerm-virtual-network.git?ref=v1.0.0"
+  source = "git@github.com:padok-team/terraform-azurerm-virtual-network.git?ref=v0.1.0"
 
   name                = "example-virutal-network"
   resource_group_name = "my-resource-group-name"
